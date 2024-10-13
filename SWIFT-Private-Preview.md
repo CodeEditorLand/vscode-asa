@@ -6,7 +6,7 @@
 
 -   Make sure your subscription has been whitelisted for the feature. If not,
     please create an
-    [issue](https://github.com/microsoft/vscode-asa/issues/new?assignees=&labels=&template=swift_prpr.md&title=%5BSWIFT%5D+Subscription+whitelist)
+    [`issue`](https://github.com/microsoft/vscode-asa/issues/new?assignees=&labels=&template=swift_prpr.md&title=%5BSWIFT%5D+Subscription+whitelist)
     here. Please wait until your issue is resolved.
 -   Available regions for private preview: **West US & North Europe**
 -   Create or prepare your VNET: please note that your VNET and ASA job must be
@@ -25,16 +25,16 @@
 -   When test connection and sample data right after creating a job, customer
     might encounter errors like below (just retry after one or two minutes)
 
-    ![connection test failed](./figures/SWIFT/connection_failed.png)
+    ![`connection test failed`](./figures/SWIFT/connection_failed.png)
 
 ## Setting up your Azure Stream Analytics Job
 
-1. [Install VS Code and ASA Tools extension](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-visual-studio-code#prerequisites)
+1. [`Install VS Code and ASA Tools extension`](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-visual-studio-code#prerequisites)
    if you haven’t done so already. You need to install **ASA Tools extenion of
    version 1.4.3 or later** to use SWIFT private preview feature.
 
 2. Create your job in
-   [VS Code](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-visual-studio-code)
+   [`VS Code`](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-visual-studio-code)
    as you would do for any other ASA job.
 
     ***
@@ -70,9 +70,9 @@
     ***
 
 6. Before saving, delegate the subnet to the ASA service inside your VNET, see
-   [Add or remove a subnet delegation in an Azure virtual network | Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-network/manage-subnet-delegation).
+   [`Add or remove a subnet delegation in an Azure virtual network | Microsoft Docs`](https://learn.microsoft.com/en-us/azure/virtual-network/manage-subnet-delegation).
 
-    ![subnet delegation](./figures/SWIFT/subnet_delegation.png)
+    ![`subnet delegation`](./figures/SWIFT/subnet_delegation.png)
 
 7. Reference a subnet in your ASA job [this step tells your job that it
    must work with a subnet]
@@ -80,7 +80,7 @@
     - Within the JobConfig.json, setup your VirtualNetworkConfiguration as
       below:
 
-    ![screenshot for VirtualNetworkConfiguration](./figures/SWIFT/vnet_configuration.png)
+    ![`screenshot for VirtualNetworkConfiguration`](./figures/SWIFT/vnet_configuration.png)
 
 8. After your ASA job is submitted, test connection and sample data should be
    performed through Azure portal.
